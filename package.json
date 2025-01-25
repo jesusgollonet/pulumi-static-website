@@ -1,13 +1,27 @@
 {
-    "name": "pulumi-static-website",
-    "main": "index.ts",
-    "devDependencies": {
-        "@types/node": "^18",
-        "typescript": "^5.0.0"
-    },
-    "dependencies": {
-        "@pulumi/aws": "^6.0.0",
-        "@pulumi/awsx": "^2.0.2",
-        "@pulumi/pulumi": "^3.113.0"
-    }
+  "name": "@jesusgollonet/pulumi-static-website",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "author": {
+    "name": "Jesus Gollonet",
+    "email": "me@jesusgollonet.com",
+    "url": "https://jesusgollonet.com"
+  },
+  "devDependencies": {
+    "@types/node": "^18",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@pulumi/aws": "^6.0.0",
+    "@pulumi/pulumi": "^3.113.0"
+  },
+  "files": [
+    "dist"
+  ]
 }
